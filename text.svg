@@ -1,0 +1,59 @@
+<svg fill="none" viewBox="0 0 300 85" width="300" height="85" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject x="10" y="10" width="280" height="65">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+    <style>
+      *,
+      *::before,
+      *::after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      #wrapper {
+        width: 100%;  
+        height: 100%;
+        padding: 10px; /* Keep padding to ensure text doesn't touch the edges */
+        box-sizing: border-box; /* Include padding in the element's dimensions */
+        background-color: transparent;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        font-size: 1.5rem; /* Consider if adjustment needed based on final layout */
+        flex-direction: column;
+        justify-content: space-around; /* Improve spacing between flex items */
+        transition: color .15s ease, background-color .15s ease;
+        display: flex;
+        border-radius: 3px; /* Adjust as needed */
+        text-align: right;
+      }
+
+      #wrapper .text-1 {
+        color: #e6edf3;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(90deg, #0077e7, #01d8d1);
+        filter: hue-rotate(0deg);
+        animation: hueShift 4s infinite cubic-bezier(0.4, 0, 1, 1) 1s;
+        text-align: left;
+      }
+
+      #wrapper .text-2 {
+        color: #e6edf3;
+      }
+
+      @keyframes hueShift {
+        0% {
+          filter: hue-rotate(0deg);
+        }
+
+        100% {
+          filter: hue-rotate(360deg);
+        }
+      }
+    </style>
+    <div id="wrapper">
+      <div class="text-1">Bringing Ideas to Life</div>
+      <div class="text-2">With Code🧑🏼‍💻</div>
+    </div>
+    </div>
+    </foreignObject>
+</svg>
